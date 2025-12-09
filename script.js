@@ -175,7 +175,6 @@ const proContainer4 = document.querySelector(".pro-container4");
 document.addEventListener('DOMContentLoaded', function () {
     const allproducts = document.querySelector(".all-products");
 
-    if (!allproducts) return;
 
     // ترکیب هر دو آرایه
     const combined = [
@@ -214,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!proContainer4) return;
 
     // کپی آرایه و شافل کردنش
-     const shuffled = [...productsData.featured, ...productsData.newArrivals]
+    const shuffled = [...productsData.featured, ...productsData.newArrivals]
         .sort(() => Math.random() - 0.5);
 
     // انتخاب 4 محصول تصادفی
@@ -360,24 +359,45 @@ if (product) {
     // اضافه کردن select / input / button بدون حذف عناصر اصلی
     const detailsContainer = document.querySelector(".single-pro-details");
 
-    const extraUI = document.createElement("div");
-    extraUI.classList.add("extra-ui");
-    
-    extraUI.innerHTML = `
-    <br>
-        <select>
-            <option disabled selected>Select size</option>
-            <option>XL</option>
-            <option>XXL</option>
-            <option>Small</option>
-            <option>Large</option>
-        </select>
-        <input type="number" value="1" min="1" max="9">
-    <button class="normal" onclick="window.location.href='./cart.html'">Add To Cart</button>
-        
-    `;
+// اول extraUI رو بساز، محتوا رو بذار و به DOM اضافه کن
+const extraUI = document.createElement("div");
+extraUI.classList.add("extra-ui");
 
-    detailsContainer.appendChild(extraUI);
+extraUI.innerHTML = `
+  <br>
+  <select>
+    <option disabled selected>Select size</option>
+    <option>XL</option>
+    <option>XXL</option>
+    <option>Small</option>
+    <option>Large</option>
+  </select>
+  <input type="number" value="1" min="1" max="9">
+  <button class="normal">Add To Cart</button>
+`;
+
+detailsContainer.appendChild(extraUI);
+
+
+const btn = extraUI.querySelector("button.normal");
+
+btn.addEventListener("click", () => {
+    showToast(" Item added to your cart! ");
+    setTimeout(() => {
+        window.location.href = './cart.html';
+    }, 2000);
+});
+
+
+function showToast(text) {
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.textContent = text;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => toast.remove(), 2500);
+}
+
         // ساخت ۴ تصویر کوچک
         const imagesArray = [
             product.image,
@@ -411,4 +431,3 @@ if (product) {
     }
 
     
-
