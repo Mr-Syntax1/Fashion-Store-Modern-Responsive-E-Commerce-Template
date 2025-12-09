@@ -382,7 +382,7 @@ detailsContainer.appendChild(extraUI);
 const btn = extraUI.querySelector("button.normal");
 
 btn.addEventListener("click", () => {
-    showToast(" Item added to your cart! ");
+    showToast(" ✅ Item added to your cart! ");
     setTimeout(() => {
         window.location.href = './cart.html';
     }, 2000);
@@ -431,3 +431,4 @@ function showToast(text) {
     }
 
     
+
