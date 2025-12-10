@@ -99,13 +99,25 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch("products.json")
         .then(res => res.json())
         .then(data => {
+
+            // تابع Toast
+            function showToast(text) {
+                const toast = document.createElement("div");
+                toast.className = "toast";
+                toast.textContent = text;
+                document.body.appendChild(toast);
+
+                setTimeout(() => toast.remove(), 2000);
+            }
+
             // Featured Products
             if (featuredContainer) {
                 data.featured.forEach(product => {
                     const slide = document.createElement('div');
                     slide.className = 'swiper-slide';
+
                     slide.innerHTML = `
-                        <div class="pro" onclick="window.location.href='sprouduct.html?id=${product.id}'">
+                        <div class="pro">
                             <img src="${product.image}" alt="${product.title}" loading="lazy">
                             <div class="des">
                                 <span>${product.brand}</span>
@@ -115,11 +127,34 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                                 <h4>$${product.price}</h4>
                             </div>
-                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                            <a href="#" class="cart-link">
+                                <i class="fal fa-shopping-cart cart"></i>
+                            </a>
                         </div>
                     `;
+
+                    const proDiv = slide.querySelector('.pro');
+                    const cartLink = slide.querySelector('.cart-link');
+
+                    // کلیک روی کارت → صفحه محصول
+                    proDiv.addEventListener("click", (e) => {
+                        if (e.target.closest('.cart-link')) return; // اگر روی سبد خرید کلیک شد، نره
+                        window.location.href = `sprouduct.html?id=${product.id}`;
+                    });
+
+                    // کلیک روی سبد خرید
+                    cartLink.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showToast(" ✅ Item added to your cart! ");
+                        setTimeout(() => {
+                            window.location.href = './cart.html';
+                        }, 1500);
+                    });
+
                     featuredContainer.appendChild(slide);
                 });
+
                 featuredSwiper.update(); 
                 featuredSwiper.autoplay.start(); 
             }
@@ -129,8 +164,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 data.newArrivals.forEach(product => {
                     const slide = document.createElement('div');
                     slide.className = 'swiper-slide';
+
                     slide.innerHTML = `
-                        <div class="pro" onclick="window.location.href='sprouduct.html?id=${product.id}'">
+                        <div class="pro">
                             <img src="${product.image}" alt="${product.title}" loading="lazy">
                             <div class="des">
                                 <span>${product.brand}</span>
@@ -140,14 +176,35 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                                 <h4>$${product.price}</h4>
                             </div>
-                           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                            <a href="#" class="cart-link">
+                                <i class="fal fa-shopping-cart cart"></i>
+                            </a>
                         </div>
                     `;
+
+                    const proDiv = slide.querySelector('.pro');
+                    const cartLink = slide.querySelector('.cart-link');
+
+                    proDiv.addEventListener("click", (e) => {
+                        if (e.target.closest('.cart-link')) return;
+                        window.location.href = `sprouduct.html?id=${product.id}`;
+                    });
+
+                    cartLink.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showToast(" ✅ Item added to your cart! ");
+                        setTimeout(() => {
+                            window.location.href = './cart.html';
+                        }, 1500);
+                    });
+
                     arrivalsContainer.appendChild(slide);
                 });
+
                 arrivalsSwiper.update();
                 arrivalsSwiper.autoplay.start();
             }
         })
-
+        .catch(err => console.error(err));
 });
