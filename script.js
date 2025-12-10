@@ -542,22 +542,38 @@ const minus = document.querySelector('.qty-minus');
 const plus = document.querySelector('.qty-plus');
 const input = document.querySelector('.qty-input');
 
+// Set initial values
 input.min = product.minQty;
 input.max = product.maxQty;
 input.value = product.minQty;
 
-minus.addEventListener('click', () => {
-  let value = parseInt(input.value) || 0;
-  if (value > parseInt(input.min)) {
-    input.value = value - 1;
-  }
-});
+// Helper function to get valid quantity
+const getValidQuantity = (value) => {
+    const min = parseInt(input.min);
+    const max = parseInt(input.max);
+    
+    if (isNaN(value)) return min;
+    if (value < min) return min;
+    if (value > max) return max;
+    return value;
+};
 
-plus.addEventListener('click', () => {
-  let value = parseInt(input.value) || 0;
-  if (value < parseInt(input.max)) {
-    input.value = value + 1;
-  }
+// Update quantity with validation
+const updateQuantity = (newValue) => {
+    input.value = getValidQuantity(newValue);
+};
+
+// Event handlers
+minus.addEventListener('click', () => updateQuantity(parseInt(input.value) - 1));
+plus.addEventListener('click', () => updateQuantity(parseInt(input.value) + 1));
+
+// Validate on manual input
+input.addEventListener('input', () => updateQuantity(parseInt(input.value)));
+input.addEventListener('blur', () => updateQuantity(parseInt(input.value)));
+
+// Prevent invalid characters
+input.addEventListener('keydown', (e) => {
+    if (['e', 'E', '+', '-'].includes(e.key)) e.preventDefault();
 });
 
 // ==== quantity selector end ====
