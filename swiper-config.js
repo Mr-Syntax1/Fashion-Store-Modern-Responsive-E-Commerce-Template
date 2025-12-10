@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                                 <h4>$${product.price}</h4>
                             </div>
-                            <a href="#" class="cart"><i class="fal fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                         </div>
                     `;
                     featuredContainer.appendChild(slide);
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>
                                 <h4>$${product.price}</h4>
                             </div>
-                            <a href="#" class="cart"><i class="fal fa-shopping-cart"></i></a>
+                           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                         </div>
                     `;
                     arrivalsContainer.appendChild(slide);
@@ -149,4 +149,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 arrivalsSwiper.autoplay.start();
             }
         })
+
 });
