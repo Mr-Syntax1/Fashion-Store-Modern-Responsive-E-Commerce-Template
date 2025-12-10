@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <h4>$${product.price}</h4>
             </div>
-            <a href="#" class="cart"><i class="fal fa-shopping-cart"></i></a>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         `;
 
         allproducts.appendChild(card);
@@ -431,4 +431,5 @@ function showToast(text) {
     }
 
     
+
 
