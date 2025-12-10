@@ -8,7 +8,7 @@
     "image": "./img/products/f1.jpg",
     "stars": 5,
     "category": "t-shirts",
-    "description": "Comfortable cotton t-shirt with a unique design"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@
     "image": "./img/products/f2.jpg",
     "stars": 3,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 3,
@@ -26,9 +26,9 @@
     "title": "Sport Performance T-shirt",
     "price": 75.21,
     "image": "./img/products/f3.jpg",
-    "stars": 5,
+    "stars": 4,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 4,
@@ -38,7 +38,7 @@
     "image": "./img/products/f4.jpg",
     "stars": 4,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 5,
@@ -48,7 +48,7 @@
     "image": "./img/products/f5.jpg",
     "stars": 2,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 6,
@@ -56,9 +56,9 @@
     "title": "Sport Performance T-shirt",
     "price": 92.32,
     "image": "./img/products/f6.jpg",
-    "stars": 1,
+    "stars": 4,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 7,
@@ -66,9 +66,9 @@
     "title": "Sport Performance T-shirt",
     "price": 59.00,
     "image": "./img/products/f7.jpg",
-    "stars": 5,
+    "stars": 2,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 8,
@@ -78,19 +78,20 @@
     "image": "./img/products/f8.jpg",
     "stars": 3,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   }
-],
-"newArrivals": [
+        ],
+
+ "newArrivals": [
   {
     "id": 9,
     "brand": "nike",
     "title": "Premium Cotton T-shirt",
     "price": 81.85,
     "image": "./img/products/n1.jpg",
-    "stars": 5,
+    "stars": 3,
     "category": "t-shirts",
-    "description": "Premium quality cotton with modern design"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 10,
@@ -100,7 +101,7 @@
     "image": "./img/products/n2.jpg",
     "stars": 2,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 11,
@@ -110,7 +111,7 @@
     "image": "./img/products/n3.jpg",
     "stars": 4,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 12,
@@ -118,9 +119,9 @@
     "title": "Sport Performance T-shirt",
     "price": 77.00,
     "image": "./img/products/n4.jpg",
-    "stars": 3,
+    "stars": 1,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 13,
@@ -128,9 +129,9 @@
     "title": "Sport Performance T-shirt",
     "price": 89.00,
     "image": "./img/products/n5.jpg",
-    "stars": 1,
+    "stars": 2,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 14,
@@ -140,7 +141,7 @@
     "image": "./img/products/n6.jpg",
     "stars": 5,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 15,
@@ -150,7 +151,7 @@
     "image": "./img/products/n7.jpg",
     "stars": 4,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
   {
     "id": 16,
@@ -160,7 +161,7 @@
     "image": "./img/products/n8.jpg",
     "stars": 4,
     "category": "sportswear",
-    "description": "Breathable sport t-shirt for active lifestyle"
+    "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   }
 ]
 }
