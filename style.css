@@ -1347,6 +1347,7 @@ input[type=number] {
 
 /* ==== quantity end ==== */
 
+
 /* ==== toast start ==== */
 .toast {
   position: fixed;
@@ -1400,6 +1401,7 @@ input[type=number] {
     }
     #contact-header{
         height: 55vh;
+        background-position: 50%;
     }
 
 }
@@ -1600,9 +1602,6 @@ input[type=number] {
         width: 100%;
         padding: 20px;
     }
-
-
-
 }
 /* ==== responsiveb medium screen End ==== */
 
